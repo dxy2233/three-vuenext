@@ -1,0 +1,23 @@
+{
+  "name": "three",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-rc.9",
+    "vue-router": "4.0.0-beta.7"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.0-beta.2",
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.1.1",
+    "vite": "^1.0.0-rc.4"
+  }
+}

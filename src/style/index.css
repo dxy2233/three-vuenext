@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  @media (max-width: 1200px) {
+    font-size: 12px;
+  }
+}
+
+/* 去除新版浏览器自动加边框的情况 */
+input,
+select,
+button,
+textarea {
+  outline: none;
+  /* &[disabled] {
+    background: #ffecec;
+    cursor: not-allowed;
+  } */
+}
+
+button {
+  height: 30px;
+  line-height: 30px;
+  border: 0;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  color: unset;
+}
