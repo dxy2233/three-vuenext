@@ -6,9 +6,9 @@
       <div class="box">
         <h3>个人登录</h3>
         <span>
-          <SvgIcon icon-class="accounts" />
+          <!-- <SvgIcon icon-class="accounts" /> -->
           <!-- <SvgIcon icon-class="accounts"></SvgIcon> -->
-          <ButtonCounter />
+          <!-- <ButtonCounter /> -->
           <!-- <svg-icon icon-class="accounts" /> -->
           <input
             v-model="form.username"
@@ -18,7 +18,7 @@
           />
         </span>
         <span>
-          <svg-icon icon-class="pass" />
+          <!-- <svg-icon icon-class="pass" /> -->
           <input
             v-model="form.password"
             type="password"
@@ -27,7 +27,7 @@
           />
         </span>
         <span>
-          <svg-icon icon-class="vcode" />
+          <!-- <svg-icon icon-class="vcode" /> -->
           <input
             v-model="form.verCode"
             type="text"
@@ -98,7 +98,7 @@ export default {
 .login {
   min-width: 850px;
   height: 100vh;
-  background: url('/@img/pagebg.jpg') no-repeat;
+  background: url('/src/assets/img/pagebg.jpg') no-repeat;
   color: #fff;
   .title-img {
     display: block;
@@ -115,7 +115,7 @@ export default {
       text-align: center;
       width: 260px;
       height: 240px;
-      background: url('/@img/line.png') no-repeat center;
+      background: url('/src/assets/img/line.png') no-repeat center;
       padding: 40px 30px;
       margin-left: 40px;
       /* span {

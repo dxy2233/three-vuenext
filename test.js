@@ -5,14 +5,24 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-module.exports = (n) => {
-  console.log(n)
-  const filesName = fs.readdirSync(resolve('src/icons/svg'))
+module.exports = (path) => {
+  const filesName = fs.readdirSync(resolve(path))
+  console.log(filesName)
   return {
-    define: {
-      svgFiles: filesName,
-    },
     transforms: [
+      {
+        test: ({ path }) => {
+          const isMain = path.endsWith('main.js')
+          return isMain
+        },
+        transform: async ({ code }) => {
+          code =
+            code +
+            `console.log(8888)
+          import('./icons/svg/accounts.svg')`
+          return code
+        },
+      },
       {
         test: ({ path }) => {
           const isSVG = path.endsWith('.svg')

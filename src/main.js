@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import './style/index.css'
-import './icons/index.js' // svg
+// import './icons/index.js' // svg
 // import SvgIcon from './icons/svg.vue' // svg组件
 
 const app = createApp(App)

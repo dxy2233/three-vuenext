@@ -19,17 +19,17 @@
 // const requireAll = (requireContext) => requireContext.keys().map(requireContext)
 // requireAll(req)
 
-const svgDom = document.createElement('svg')
+// const svgDom = document.createElement('svg')
 // svgDom.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
 // svgDom.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlinkg')
-svgDom.setAttribute('aria-hidden', true)
+// svgDom.setAttribute('aria-hidden', true)
 // svgDom.setAttribute('id', 'betterSvgSprite')
-svgDom.style = 'position: absolute; width: 0; height: 0; overflow: hidden;'
-const bodyDom = document.querySelector('body')
-bodyDom.appendChild(svgDom)
+// svgDom.style = 'position: absolute; width: 0; height: 0; overflow: hidden;'
+// const bodyDom = document.querySelector('body')
+// bodyDom.appendChild(svgDom)
 
 // import('./svg/accounts.svg').then((res) => {
-//   console.log(res + 111111)
+//   console.log(res)
 // })
 // import ss from './svg/accounts.svg'
 // console.log(ss)
