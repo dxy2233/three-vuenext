@@ -8,7 +8,7 @@
         <span>
           <!-- <SvgIcon icon-class="accounts" /> -->
           <!-- <SvgIcon icon-class="accounts"></SvgIcon> -->
-          <!-- <ButtonCounter /> -->
+          <ButtonCounter />
           <!-- <svg-icon icon-class="accounts" /> -->
           <input
             v-model="form.username"
