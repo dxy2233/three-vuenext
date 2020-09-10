@@ -6,10 +6,7 @@
       <div class="box">
         <h3>个人登录</h3>
         <span>
-          <!-- <SvgIcon icon-class="accounts" /> -->
-          <!-- <SvgIcon icon-class="accounts"></SvgIcon> -->
-          <ButtonCounter />
-          <!-- <svg-icon icon-class="accounts" /> -->
+          <svg-icon icon-class="accounts" />
           <input
             v-model="form.username"
             type="text"
@@ -18,7 +15,7 @@
           />
         </span>
         <span>
-          <!-- <svg-icon icon-class="pass" /> -->
+          <svg-icon icon-class="pass" />
           <input
             v-model="form.password"
             type="password"
@@ -27,7 +24,7 @@
           />
         </span>
         <span>
-          <!-- <svg-icon icon-class="vcode" /> -->
+          <svg-icon icon-class="vcode" />
           <input
             v-model="form.verCode"
             type="text"

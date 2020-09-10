@@ -1,8 +1,6 @@
 <template>
   <svg :class="svgClass" aria-hidden="true">
-    <!-- <use :xlink:href="iconName" /> -->
-    <use xlink:href="#better-accounts" />
-    <use xlink:href="#图层_1" />
+    <use :xlink:href="iconName" />
   </svg>
 </template>
 
@@ -21,7 +19,7 @@ export default {
   },
   computed: {
     iconName() {
-      return `#icon-${this.iconClass}`
+      return `#better-${this.iconClass}`
     },
     svgClass() {
       if (this.className) {
@@ -41,6 +39,11 @@ export default {
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 3px 0 0;
+  position: relative;
+  top: 1px;
 }
 .svg-icon:hover {
   cursor: pointer;

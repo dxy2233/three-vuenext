@@ -7,7 +7,6 @@ function resolve(dir) {
 
 module.exports = (path) => {
   const filesName = fs.readdirSync(resolve(path))
-  console.log(filesName)
   return {
     transforms: [
       {
@@ -21,21 +20,21 @@ module.exports = (path) => {
             `function createSVG(res) {
               const bodyDom = document.querySelector('body')
               const bodyFChild = bodyDom.firstElementChild
-              if (bodyFChild.nodeName !== 'SVG') {
-                const svgDom = document.createElement('svg')
+              if (bodyFChild.nodeName !== 'svg') {
+                const svgDom = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
                 svgDom.setAttribute('aria-hidden', true)
                 svgDom.style = 'position: absolute; width: 0; height: 0; overflow: hidden;'
                 bodyDom.insertBefore(svgDom, bodyFChild)
               }
               let svgDom = bodyDom.firstElementChild
-              console.log(svgDom.innerHTML)
-              // const svgChild = document.createRange().createContextualFragment(res.default)
-              // svgDom.appendChild(svgChild)
-              svgDom.innerHTML = res.default
+              svgDom.innerHTML = svgDom.innerHTML + res.default
           }`
-          code =
-            code +
-            `import('./icons/svg/accounts.svg').then((res)=>{createSVG(res)})`
+          filesName.forEach((item) => {
+            code =
+              code +
+              `
+              import('./icons/svg/${item}').then((res)=>{createSVG(res)})`
+          })
           return code
         },
       },

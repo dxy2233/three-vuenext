@@ -11,6 +11,5 @@ module.exports = {
     '/@views/': resolve('src/views'),
     '/@img/': resolve('src/assets/img'),
   },
-  // configureServer: [test()],
   plugins: [test('src/icons/svg')],
 }
